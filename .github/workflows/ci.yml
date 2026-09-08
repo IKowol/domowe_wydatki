@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  php:
+    name: PHP checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: mbstring, sqlsrv
+          coverage: none
+
+      - name: Show PHP version
+        run: php --version
+
+      - name: Validate Composer files
+        run: composer validate --strict
+
+      - name: Install dependencies
+        run: >
+          composer install
+          --no-interaction
+          --prefer-dist
+          --no-progress
+
+      - name: Check PHP syntax
+        shell: bash
+        run: |
+          set -e
+
+          find config public scripts src \
+            -type f \
+            -name "*.php" \
+            -print0 |
+          while IFS= read -r -d '' file; do
+            php -l "$file"
+          done
