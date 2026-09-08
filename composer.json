@@ -1,0 +1,15 @@
+{
+    "name": "portfolio/domowe-wydatki",
+    "description": "Aplikacja webowa do zarządzania domowymi wydatkami w PHP i Microsoft SQL Server.",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.3",
+        "ext-mbstring": "*",
+        "ext-sqlsrv": "*",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

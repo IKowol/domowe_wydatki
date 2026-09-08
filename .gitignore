@@ -1,0 +1,21 @@
+# Sekrety i lokalna konfiguracja
+.env
+.env.*
+!.env.example
+
+# Zależności Composera
+/vendor/
+
+# Logi aplikacji
+/storage/logs/*
+!/storage/logs/.gitkeep
+
+# Edytory i IDE
+/.idea/
+/.vscode/
+*.user
+*.suo
+
+# Windows i macOS
+Thumbs.db
+.DS_Store
