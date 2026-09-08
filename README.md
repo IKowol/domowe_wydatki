@@ -1,4 +1,5 @@
 # Home Expenses
+[![CI](https://github.com/IKowol/domowe_wydatki/actions/workflows/ci.yml/badge.svg)](https://github.com/IKowol/domowe_wydatki/actions/workflows/ci.yml)
 
 A web application for managing household expenses, built with **PHP 8.3** and **Microsoft SQL Server**.
 
