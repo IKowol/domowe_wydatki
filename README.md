@@ -8,6 +8,26 @@ The user interface is currently available in Polish.
 
 ---
 
+## Screenshots
+
+### Dashboard
+
+![Dashboard](docs/screenshots/dashboard.png)
+
+### Reports
+
+![Reports](docs/screenshots/reports.png)
+
+### Expense management
+
+![Expense management](docs/screenshots/expenses.png)
+
+### Administration
+
+![User administration](docs/screenshots/admin-users.png)
+
+---
+
 ## Features
 
 ### Authentication and authorization
