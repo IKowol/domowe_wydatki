@@ -642,6 +642,25 @@ The application currently includes:
 
 ---
 
+## Quality checks
+
+Every push and pull request to the `main` branch is automatically verified using GitHub Actions.
+
+The CI pipeline currently checks:
+
+- PHP 8.3 environment
+- required PHP extensions
+- Composer configuration
+- dependency installation from `composer.lock`
+- syntax of all PHP files
+
+The workflow configuration is available in:
+
+```text
+.github/workflows/ci.yml
+
+This helps detect syntax errors and dependency/configuration problems before changes reach the main branch.
+
 ## License
 
 This project is currently marked as:
