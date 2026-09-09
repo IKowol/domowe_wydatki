@@ -658,6 +658,7 @@ Run the test suite locally with:
 
 ```bash
 composer test
+```
 
 ### Quality checks
 
