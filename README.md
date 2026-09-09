@@ -642,7 +642,7 @@ The application currently includes:
 
 ---
 
-## Quality checks
+### Quality checks
 
 Every push and pull request to the `main` branch is automatically verified using GitHub Actions.
 
@@ -658,8 +658,11 @@ The workflow configuration is available in:
 
 ```text
 .github/workflows/ci.yml
+```
 
 This helps detect syntax errors and dependency/configuration problems before changes reach the main branch.
+
+---
 
 ## License
 
