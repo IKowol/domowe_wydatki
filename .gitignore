@@ -19,3 +19,6 @@
 # Windows i macOS
 Thumbs.db
 .DS_Store
+
+# PHPUnit
+/.phpunit.cache/

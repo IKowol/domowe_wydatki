@@ -642,6 +642,23 @@ The application currently includes:
 
 ---
 
+## Automated tests
+
+The project uses PHPUnit for unit testing of application logic that does not require a database connection.
+
+Current tests cover:
+
+- password validation
+- store validation
+- expense validation
+- expense filter parsing and validation
+- pagination helpers
+
+Run the test suite locally with:
+
+```bash
+composer test
+
 ### Quality checks
 
 Every push and pull request to the `main` branch is automatically verified using GitHub Actions.
@@ -653,6 +670,7 @@ The CI pipeline currently checks:
 - Composer configuration
 - dependency installation from `composer.lock`
 - syntax of all PHP files
+- automated PHPUnit tests
 
 The workflow configuration is available in:
 
