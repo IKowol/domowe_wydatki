@@ -616,10 +616,6 @@ $csrfToken = app_csrf_token();
                         ) ?>"
                         readonly
                     >
-
-                    <p class="field-help">
-                        Zmianę roli dodamy w następnym etapie.
-                    </p>
                 </div>
             </div>
 
